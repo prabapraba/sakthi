@@ -1,6 +1,6 @@
 <?php
 
-/*  @var $this \yii\web\View */ // New file
+/*  @var $this \yii\web\View */
 /* @var $content string */
 
 use backend\assets\AppAsset;

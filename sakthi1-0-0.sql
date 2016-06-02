@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 02, 2016 at 08:20 AM
+-- Generation Time: Jun 02, 2016 at 11:36 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -73,15 +73,36 @@ CREATE TABLE `product` (
   `name` varchar(75) NOT NULL,
   `material` varchar(50) NOT NULL,
   `specification` varchar(200) NOT NULL,
-  `code` varchar(25) NOT NULL
+  `code` varchar(25) NOT NULL,
+  `stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `name`, `material`, `specification`, `code`) VALUES
-(1, 'ORING', 'NITRILE', '19.50X3.00', 'O209');
+INSERT INTO `product` (`id`, `name`, `material`, `specification`, `code`, `stock`) VALUES
+(1, 'ORING', 'NITRILE', '19.50X3.00', 'O209', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stock`
+--
+
+CREATE TABLE `stock` (
+  `id` int(11) NOT NULL,
+  `productid` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `addedon` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stock`
+--
+
+INSERT INTO `stock` (`id`, `productid`, `quantity`, `addedon`) VALUES
+(1, 1, 1, '2016-05-04 18:30:00');
 
 -- --------------------------------------------------------
 
@@ -131,6 +152,12 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `stock`
+--
+ALTER TABLE `stock`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -152,6 +179,11 @@ ALTER TABLE `clients`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `stock`
+--
+ALTER TABLE `stock`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`

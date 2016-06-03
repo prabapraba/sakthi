@@ -68,6 +68,7 @@ class StockController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            $model->addedon = date("Y-m-d H:i:s", time());
             return $this->render('create', [
                 'model' => $model,
             ]);

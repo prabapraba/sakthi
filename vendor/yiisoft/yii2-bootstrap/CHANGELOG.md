@@ -81,7 +81,7 @@ Yii Framework 2 bootstrap extension Change Log
 
 - Bug #3292: Fixed dropdown widgets rendering incorrect HTML (it3rmit)
 - Bug #3740: Fixed duplicate error message when client validation is enabled (tadaszelvys)
-- Bug #3749: Fixed invalid plugin registration and ensure clickable links in dropdown (kartik-v)
+- Bug #3749: Fixed invalid plugin registration and ensure clickable links in dropdown (raja)
 - Enh #4024: Added ability to `yii\bootstrap\Tabs` to encode each `Tabs::items['label']` separately (creocoder, umneeq)
 - Enh #4120: Added ability for each item to choose it's encoding option in `Dropdown` and `Nav` (Alex-Code)
 - Enh #4363: Added `showIndicators` property to make Carousel indicators optional (sdkiller)
@@ -100,7 +100,7 @@ Yii Framework 2 bootstrap extension Change Log
 - Enh #1474: Added option to make NavBar 100% width (cebe)
 - Enh #1552: It is now possible to use multiple bootstrap NavBar in a single page (Alex-Code)
 - Enh #1553: Only add navbar-default class to NavBar when no other class is specified (cebe)
-- Enh #1562: Added `yii\bootstrap\Tabs::linkOptions` (kartik-v)
+- Enh #1562: Added `yii\bootstrap\Tabs::linkOptions` (raja)
 - Enh #1601: Added support for tagName and encodeLabel parameters in ButtonDropdown (omnilight)
 - Enh #1881: Improved `yii\bootstrap\NavBar` with `containerOptions`, `innerContainerOptions` and `renderInnerContainer` (creocoder)
 - Enh #2425: Tabs widget now selects first tab if no active tab is specified (samdark)

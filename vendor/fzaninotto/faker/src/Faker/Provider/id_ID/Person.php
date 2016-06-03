@@ -120,7 +120,7 @@ class Person extends \Faker\Provider\Person
         'Hamima', 'Hana', 'Hani', 'Hasna', 'Humaira', 'Ika', 'Indah', 'Intan',
         'Irma', 'Icha', 'Ida', 'Ifa', 'Ilsa', 'Ina', 'Ira', 'Iriana', 'Jamalia',
         'Janet', 'Jane', 'Julia', 'Juli', 'Jessica', 'Jasmin', 'Jelita',
-        'Kamaria', 'Kamila', 'Kani', 'Karen', 'Karimah', 'Kartika', 'Kasiyah',
+        'Kamaria', 'Kamila', 'Kani', 'Karen', 'Karimah', 'rajaa', 'Kasiyah',
         'Keisha', 'Kezia', 'Kiandra', 'Kayla', 'Kania', 'Lala', 'Lalita',
         'Latika', 'Laila', 'Laras', 'Lidya', 'Lili', 'Lintang', 'Maria', 'Mala',
         'Maya', 'Maida', 'Maimunah', 'Melinda', 'Mila', 'Mutia', 'Michelle',

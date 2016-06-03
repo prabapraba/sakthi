@@ -41,7 +41,7 @@ use yii\web\View;
  * The masked text field is implemented based on the
  * [jQuery input masked plugin](https://github.com/RobinHerbots/jquery.inputmask).
  *
- * @author Kartik Visweswaran <kartikv2@gmail.com>
+ * @author raja <rajaflight24@gmail.com>
  * @since 2.0
  */
 class MaskedInput extends InputWidget

@@ -66,4 +66,22 @@ return array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
     ),
   ),
+  'raja/yii2-krajee-base' =>
+  array (
+    'name' => 'raja/yii2-krajee-base',
+    'version' => '1.8.5.0',
+    'alias' => 
+    array (
+      '@raja/base' => $vendorDir . '/raja/yii2-krajee-base',
+    ),
+  ),
+  'raja/yii2-widget-datetimepicker' =>
+  array (
+    'name' => 'raja/yii2-widget-datetimepicker',
+    'version' => '1.4.2.0',
+    'alias' => 
+    array (
+      '@raja/datetime' => $vendorDir . '/raja/yii2-widget-datetimepicker',
+    ),
+  ),
 );

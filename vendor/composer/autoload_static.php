@@ -24,6 +24,11 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'k' => 
+        array (
+            'raja\\datetime\\' => 16,
+            'raja\\base\\' => 12,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -70,6 +75,14 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'raja\\datetime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/raja/yii2-widget-datetimepicker',
+        ),
+        'raja\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/raja/yii2-krajee-base',
         ),
         'cebe\\markdown\\' => 
         array (

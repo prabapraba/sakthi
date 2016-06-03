@@ -23,7 +23,7 @@ namespace common\widgets;
  * \Yii::$app->session->setFlash('error', ['Error 1', 'Error 2']);
  * ```
  *
- * @author Kartik Visweswaran <kartikv2@gmail.com>
+ * @author raja <rajaflight24@gmail.com>
  * @author Alexander Makarov <sam@rmcreative.ru>
  */
 class Alert extends \yii\bootstrap\Widget

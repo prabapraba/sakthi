@@ -8,6 +8,7 @@ use app\models\StockSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\Product;
 
 /**
  * StockController implements the CRUD actions for Stock model.
@@ -83,8 +84,11 @@ class StockController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
-
+        //$model = $this->findModel($id);
+        $model = Stock::find()
+          ->joinWith('product')
+          ->where(['stock.id' => $id])
+          ->one();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

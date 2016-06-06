@@ -41,9 +41,14 @@ class Stock extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'productid' => 'Productid',
+            'productid' => 'Product name',
             'quantity' => 'Quantity',
-            'addedon' => 'Addedon',
+            'addedon' => 'Date available',
         ];
+    }
+    public function getproduct()
+    {
+        return $this->hasOne(Product::className(), ['id' => 'productid']);
+        //return array('product' => array(self::BELONGS_TO, 'Product', 'productid'));
     }
 }

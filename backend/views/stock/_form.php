@@ -16,7 +16,7 @@ use app\models\Product;
     <?php $form = ActiveForm::begin(); ?>
     <?php
     $data = Product::find()
-      ->select(['name as value', 'name as  label','id as id'])
+      ->select(['id as value', 'name as  label','id as id'])
       ->asArray()
       ->all();
     ?>
@@ -26,6 +26,7 @@ use app\models\Product;
     echo AutoComplete::widget([
       'name' => 'productid',
       'id' => 'auto-proid',
+      'value' => $model->product->name,
       'options' => ['class' => 'form-control'],
       'clientOptions' => [
         'source' => $data,
@@ -35,7 +36,9 @@ use app\models\Product;
      }")],
 
     ]);
+    /*echo $form->field($model, 'productid')->widget(AutoComplete::className(), ['clientOptions' => ['source' => $data],]);*/
     ?>
+
     <?= Html::activeHiddenInput($model, 'productid')?>
     <!-- <? //= $form->field($model, 'productid')->textInput() ?>-->
 

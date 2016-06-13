@@ -23,10 +23,15 @@ use app\models\Product;
 
     <?php
     echo '<label>Product</label>' .'<br>';
+    if(isset($model->product)){
+        $productName = $model->product->name;
+    }else{
+        $productName = '';
+    }
     echo AutoComplete::widget([
       'name' => 'productid',
       'id' => 'auto-proid',
-      'value' => $model->product->name,
+      'value' => $productName,
       'options' => ['class' => 'form-control'],
       'clientOptions' => [
         'source' => $data,
